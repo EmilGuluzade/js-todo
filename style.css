@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    110deg,
+    rgba(120, 229, 215, 1) 0%,rgba(156, 177, 229, 1) 96%);
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+h1 span{
+  font-size: 50px;
+}
+#todo-input{box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+}
+#todo-list{
+
+  margin-top: 20px;  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.input-container{
+  display: flex;align-items: center;gap: 10px;
+}
+ul li{position: relative;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #fff;
+  list-style: none;
+  display: flex;
+  border-radius: 5px;
+ align-items: center;
+}
+ul li label{
+  padding: 10px;
+}
+.add{box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-weight: 900;
+  padding: 10px;
+  background-color: rgb(70, 162, 228);
+  border-radius: 5px;
+  border: none;
+}
+#checkbox{
+  width: 30px;
+} 
+.fa-trash{
+  position: absolute;right: 0px;top: 0;height: 100%;
+  background-color: red;padding: 10px 15px;
+}
+.done{
+  text-decoration: line-through;
+  text-decoration-color:rgb(55, 138, 255);
+}
